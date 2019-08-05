@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import {ViewModule} from './view/view.module';
+import {TestService} from './test.service';
 
 @NgModule({
   declarations: [
@@ -12,7 +13,9 @@ import {ViewModule} from './view/view.module';
     BrowserModule,
     ViewModule
   ],
-  providers: [],
+  providers: [
+    TestService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
